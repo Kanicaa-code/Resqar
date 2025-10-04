@@ -1,0 +1,17 @@
+@{
+    ViewBag.Title = "First Aid Guidance";
+}
+
+<h1>First Aid Guidance System</h1>
+
+<p>Select an option:</p>
+
+<a href="/FirstAid/BandageCut"><button>Bandage a cut</button></a>
+<a href="/FirstAid/TreatBurn"><button>Treat a burn</button></a>
+<a href="/FirstAid/CPRSteps"><button>CPR steps</button></a>
+
+@if(ViewBag.Message != null)
+{
+    <h3>Instructions:</h3>
+    <pre>@ViewBag.Message</pre>
+}
